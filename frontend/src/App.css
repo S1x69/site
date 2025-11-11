@@ -180,11 +180,21 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 36px;
+  min-height: 36px;
 }
 
 .icon-button:hover {
   background: var(--bg-tertiary);
   transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .icon-button {
+    padding: 6px;
+    min-width: 32px;
+    min-height: 32px;
+  }
 }
 
 /* =========================
